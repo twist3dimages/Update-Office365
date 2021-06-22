@@ -25,7 +25,7 @@ $result = $HTML.Content
 
 
 #insider channel data
-$InsiderfastURL="https://docs.microsoft.com/en-us/officeupdates/update-history-beta-channel"
+$InsiderfastURL="https://docs.microsoft.com/en-us/ officeupdates/update-history-beta-channel"
 $InsiderfastHTML = Invoke-WebRequest -Uri $InsiderfastURL
 $InsiderfastResult = [regex]::matches( $InsiderfastHTML.Content , '(January|February|March|Arpil|May|June|July|August|September|October|November|December)\s\d{1,2},\s\d{4}</strong><br/>\s*Version\s\d{4}\s\(Build\s\d{4,5}\.\d{4,5}\)')
 
